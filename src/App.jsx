@@ -202,7 +202,7 @@ function App() {
             ></img>
             <h1 className="text-4xl font-bold mb-1">Kurtis E1</h1>
             <h2 className="font-semibold">
-            Kurtis-SmolLM2-135M-Instruct-DPO WebGPU
+              Kurtis-SmolLM2-135M-Instruct-DPO WebGPU
             </h2>
           </div>
 
@@ -218,8 +218,10 @@ function App() {
               >
                 Kurtis-SmolLM2-135M-Instruct-DPO
               </a>
-              , a 135M parameter SmolLM2 fine-tuned model optimized for in-browser inference.
-              <br /><br />
+              , a 135M parameter SmolLM2 fine-tuned model optimized for
+              in-browser inference.
+              <br />
+              <br />
               Everything runs entirely in your browser with{" "}
               <a
                 href="https://huggingface.co/docs/transformers.js"
@@ -229,9 +231,10 @@ function App() {
               >
                 🤗&nbsp;Transformers.js
               </a>{" "}
-              and ONNX Runtime Web, meaning no data is sent to a server. <br /><br />  Once
-              loaded, it can even be used offline.<br /><br /> The source code for this demo 
-              is available on{" "}
+              and ONNX Runtime Web, meaning no data is sent to a server. <br />
+              <br /> Once loaded, it can even be used offline.
+              <br />
+              <br /> The source code for this demo is available on{" "}
               <a
                 href="https://github.com/huggingface/transformers.js-examples/tree/main/smollm-webgpu"
                 target="_blank"

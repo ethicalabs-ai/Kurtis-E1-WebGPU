@@ -92,16 +92,16 @@ async function generate(messages) {
     // TODO: Add back when fixed
     // past_key_values: past_key_values_cache,
     do_sample: true,
-    temperature: 0.3,          // Precise yet natural tone
-    top_k: 25,                 // Diverse yet controlled vocabulary
-    top_p: 0.75,               // Smooth phrasing with coherent variety
-    typical_p: 0.85,           // Consistent and focused phrasing
-    penalty_repeat: 1.1,       // Mild repetition avoidance
-    penalty_freq: 1.05,        // Encourages slight variation
-    penalty_present: 1.0,      // Neutral balance for naturalness
-    penalty_last_n: 128,       // Strong contextual awareness
-    max_length: 1024,           // Concise, coherent output length
-    seed: 42,                   // Stable, repeatable results    
+    temperature: 0.3, // Precise yet natural tone
+    top_k: 25, // Diverse yet controlled vocabulary
+    top_p: 0.75, // Smooth phrasing with coherent variety
+    typical_p: 0.85, // Consistent and focused phrasing
+    penalty_repeat: 1.1, // Mild repetition avoidance
+    penalty_freq: 1.05, // Encourages slight variation
+    penalty_present: 1.0, // Neutral balance for naturalness
+    penalty_last_n: 128, // Strong contextual awareness
+    max_length: 1024, // Concise, coherent output length
+    seed: 42, // Stable, repeatable results
     streamer,
     stopping_criteria,
     return_dict_in_generate: true,
