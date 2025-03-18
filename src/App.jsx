@@ -218,7 +218,7 @@ function App() {
               >
                 Kurtis-SmolLM2-135M-Instruct-DPO
               </a>
-              , a 135M parameter SmolLM2 fine-tuned model optimized for
+              , a 135M parameter SmolLM2 fine-tune optimized for
               in-browser inference.
               <br />
               <br />

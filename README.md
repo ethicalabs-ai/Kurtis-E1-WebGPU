@@ -7,14 +7,13 @@ sdk: static
 pinned: false
 license: apache-2.0
 models:
-  - HuggingFaceTB/SmolLM-360M-Instruct
-short_description: A powerful AI chatbot that runs locally in your browser
-thumbnail: https://huggingface.co/spaces/webml-community/smollm-webgpu/resolve/main/banner.png
+  - ethicalabs/Kurtis-SmolLM2-135M-Instruct-DPO-ONNX
+short_description: An empathetic assistant that runs locally in your browser
 ---
 
 # SmolLM WebGPU
 
-A simple React + Vite application for running [SmolLM-360M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM-360M-Instruct), a powerful small language model, locally in the browser using Transformers.js and WebGPU-acceleration.
+A simple React + Vite application for running [Kurtis-SmolLM2-135M-Instruct](https://huggingface.co/ethicalabs/Kurtis-SmolLM2-135M-Instruct-DPO-ONNX), a powerful small language model, locally in the browser using Transformers.js and WebGPU-acceleration.
 
 ## Getting Started
 
