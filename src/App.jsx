@@ -218,8 +218,8 @@ function App() {
               >
                 Kurtis-SmolLM2-135M-Instruct-DPO
               </a>
-              , a 135M parameter SmolLM2 fine-tune optimized for
-              in-browser inference.
+              , a 135M parameter SmolLM2 fine-tune optimized for in-browser
+              inference.
               <br />
               <br />
               Everything runs entirely in your browser with{" "}
