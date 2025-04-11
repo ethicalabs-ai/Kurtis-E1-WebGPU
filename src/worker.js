@@ -36,7 +36,7 @@ class TextGenerationPipeline {
     });
 
     this.model ??= AutoModelForCausalLM.from_pretrained(this.model_id, {
-      dtype: "bnb4", // TODO: use "q4" as fallback when fixed
+      //dtype: "q4", // TODO: use "q4" as fallback when fixed
       device: "webgpu",
       progress_callback,
     });
