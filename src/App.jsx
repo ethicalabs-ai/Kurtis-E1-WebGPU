@@ -202,7 +202,7 @@ function App() {
             ></img>
             <h1 className="text-4xl font-bold mb-1">Kurtis E1</h1>
             <h2 className="font-semibold">
-              Kurtis-SmolLM2-135M-Instruct-DPO WebGPU
+              Kurtis-E1.1-Qwen2.5-0.5B-Instruct-ONNX-DPO WebGPU
             </h2>
           </div>
 
@@ -211,12 +211,12 @@ function App() {
               <br />
               You are about to load{" "}
               <a
-                href="https://huggingface.co/ethicalabs/Kurtis-SmolLM2-135M-Instruct-DPO"
+                href="https://huggingface.co/ethicalabs/Kurtis-E1.1-Qwen2.5-0.5B-Instruct-ONNX-DPO"
                 target="_blank"
                 rel="noreferrer"
                 className="font-medium underline"
               >
-                Kurtis-SmolLM2-135M-Instruct-DPO
+                Kurtis-E1.1-Qwen2.5-0.5B-Instruct-ONNX-DPO
               </a>
               , a 135M parameter SmolLM2 fine-tune optimized for in-browser
               inference.

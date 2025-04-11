@@ -1,5 +1,5 @@
 ---
-title: SmolLM WebGPU
+title: Kurtis-E1.1-Qwen2.5-0.5B-Instruct WebGPU
 emoji: 🤏
 colorFrom: blue
 colorTo: indigo
@@ -7,13 +7,13 @@ sdk: static
 pinned: false
 license: apache-2.0
 models:
-  - ethicalabs/Kurtis-SmolLM2-135M-Instruct-DPO-ONNX
+  - ethicalabs/Kurtis-E1.1-Qwen2.5-0.5B-Instruct-ONNX
 short_description: An empathetic assistant that runs locally in your browser
 ---
 
 # SmolLM WebGPU
 
-A simple React + Vite application for running [Kurtis-SmolLM2-135M-Instruct](https://huggingface.co/ethicalabs/Kurtis-SmolLM2-135M-Instruct-DPO-ONNX), a powerful small language model, locally in the browser using Transformers.js and WebGPU-acceleration.
+A simple React + Vite application for running [Kurtis-E1.1-Qwen2.5-0.5B-Instruct-ONNX](https://huggingface.co/ethicalabs/Kurtis-E1.1-Qwen2.5-0.5B-Instruct-ONNX), a powerful small language model, locally in the browser using Transformers.js and WebGPU-acceleration.
 
 ## Getting Started
 

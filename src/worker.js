@@ -28,7 +28,7 @@ async function check() {
  * This class uses the Singleton pattern to enable lazy-loading of the pipeline
  */
 class TextGenerationPipeline {
-  static model_id = "ethicalabs/Kurtis-SmolLM2-135M-Instruct-DPO-ONNX";
+  static model_id = "ethicalabs/Kurtis-E1.1-Qwen2.5-0.5B-Instruct-ONNX";
 
   static async getInstance(progress_callback = null) {
     this.tokenizer ??= AutoTokenizer.from_pretrained(this.model_id, {
@@ -36,7 +36,7 @@ class TextGenerationPipeline {
     });
 
     this.model ??= AutoModelForCausalLM.from_pretrained(this.model_id, {
-      //dtype: "q4", // TODO: use "q4" as fallback when fixed
+      dtype: "bnb4", // TODO: use "q4" as fallback when fixed
       device: "webgpu",
       progress_callback,
     });
@@ -92,15 +92,15 @@ async function generate(messages) {
     // TODO: Add back when fixed
     // past_key_values: past_key_values_cache,
     do_sample: true,
-    temperature: 0.3, // Precise yet natural tone
-    top_k: 25, // Diverse yet controlled vocabulary
-    top_p: 0.75, // Smooth phrasing with coherent variety
-    typical_p: 0.85, // Consistent and focused phrasing
-    penalty_repeat: 1.1, // Mild repetition avoidance
-    penalty_freq: 1.05, // Encourages slight variation
-    penalty_present: 1.0, // Neutral balance for naturalness
-    penalty_last_n: 128, // Strong contextual awareness
-    max_length: 1024, // Concise, coherent output length
+    //temperature: 0.3, // Precise yet natural tone
+    //top_k: 25, // Diverse yet controlled vocabulary
+    //top_p: 0.75, // Smooth phrasing with coherent variety
+    //typical_p: 0.85, // Consistent and focused phrasing
+    //penalty_repeat: 1.1, // Mild repetition avoidance
+    //penalty_freq: 1.05, // Encourages slight variation
+    //penalty_present: 1.0, // Neutral balance for naturalness
+    //penalty_last_n: 128, // Strong contextual awareness
+    max_length: 512, // Concise, coherent output length
     seed: 42, // Stable, repeatable results
     streamer,
     stopping_criteria,
